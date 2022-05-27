@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Création de plusieurs tableaux, avec differente choses.">
+    <title>Les tableaux</title>
+    <link rel="icon" type="image/jpg" href="../Favicone/favicon2.jpg">
+</head>
+
+<body>
+    <h1>Obszynski Melodie - Les tableaux</h1>
+    <h2>Mon premier tableau</h2>
+    <!-- Début du premier tableau -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Game</th>
+                <th>Console</th>
+            </tr>
+        </thead>
+        <!-- debut du corp -->
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Pkmn Ruby</td>
+                <td>Game Boy Advance</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Rayman 2</td>
+                <td>Deramcast</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Wario Ware</td>
+                <td>Game Boy Advance</td>
+            </tr>
+
+            <tr>
+                <td>004</td>
+                <td>Sonic Advt 2</td>
+                <td>Deramcast</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Animal Crossing</td>
+                <td>Game Cube</td>
+            </tr>
+        </tbody>
+        <!-- fin du corp -->
+    </table>
+    <!-- fin du premier tableau -->
+
+    <h2>Mon second tableau</h2>
+    <!-- Début du second tableau -->
+    <table border="1">
+        <!-- debut de l'entête -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Game</th>
+                <th>Console</th>
+            </tr>
+        </thead>
+        <!-- fin de l'entête -->
+        <!-- debut du corp -->
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Rayman 2</td>
+                <td rowspan="2">Deramcast</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Sonic Advt 2</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Pkmn Ruby</td>
+                <td rowspan="2">Game Boy Advance</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Wario Ware</td>
+            </tr>
+            <tr>
+                <td>005</td>
+                <td>Animal Crossing</td>
+                <td>Game Cube</td>
+            </tr>
+        </tbody>
+        <!-- fin du corp -->
+    </table>
+    <!-- fin du second tableau -->
+
+    <h2>Mon troisième tableau</h2>
+    <!-- debut du troisieme tableau -->
+    <table border="1">
+        <!-- debut de l'entête -->
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Game</th>
+                <th>Console</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <!-- fin de l'entête -->
+        <!-- debut du corp -->
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Pkmn Ruby</td>
+                <td>Game Boy Advance</td>
+                <td>30.00 €</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Rayman 2</td>
+                <td>Deramcast</td>
+                <td>40.00 €</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Wario Ware</td>
+                <td>Game Boy Advance</td>
+                <td>25.00 €</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td>Sonic Advt 2</td>
+                <td>Deramcast</td>
+                <td>40.00 €</td>
+            </tr>
+        </tbody>
+        <!-- fin du corp -->
+        <!-- debut du bas de tableaux -->
+        <tfoot>
+            <tr>
+                <td>Articles</td>
+                <td colspan="3">Rayman 2 + Sonic Advt</td>
+            </tr>
+            <tr>
+                <td colspan="3">TOTAL</td>
+                <td>80.00 €</td>
+            </tr>
+        </tfoot>
+        <!-- fin du bas de tableaux -->
+        <!-- fin du troisieme tableau -->
+    </table>
+
+    <h2>Mon emploi du temps</h2>
+    <!-- debut du dernier tableau -->
+    <table border="1">
+        <!-- debut de l'entête -->
+        <thead>
+            <tr>
+                <th colspan="7">EMPLOI DU TEMPS</th>
+            </tr>
+            <tr>
+                <td>X</td>
+                <td>Lundi</td>
+                <td>Mardi</td>
+                <td>Mercredi</td>
+                <td>Jeudi</td>
+                <td>Vendredi</td>
+                <td>WEEK-END</td>
+            </tr>
+        </thead>
+        <!-- fin de l'entête -->
+        <!-- debut du corp -->
+        <tbody>
+            <tr>
+                <td rowspan="2">A.M</td>
+                <td rowspan="2">rentrée</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td rowspan="4">Libre</td>
+                <td>TP n°5</td>
+                <td rowspan="4">NETFLIX & CHILL</td>
+            </tr>
+            <tr>
+                <td>TP n°2</td>
+                <td>TP n°4</td>
+                <td>TP n°6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">P.M</td>
+                <td>HTML</td>
+                <td rowspan="2">TP n°3</td>
+                <td rowspan="2">Bilan</td>
+                <td>JS</td>
+            </tr>
+            <tr>
+                <td>TP n°1</td>
+                <td>PHP</td>
+            </tr>
+        </tbody>
+        <!-- fin du corp -->
+    </table>
+    <!-- fin du dernier tableau -->
+
+</body>
+
+</html>

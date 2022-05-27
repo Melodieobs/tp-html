@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Exercice 4 sur les formulaires">
+    <title>Les formulaires - Exercice n°4</title>
+    <link rel="icon" type="image/jpg" href="../Favicone/favicon2.jpg">
+</head>
+
+<body>
+    <form method="POST" action="#">
+        <fieldset>
+            <legend>Exo 4 - Revue de code</legend>
+            <fieldset>
+                <legend> Genre : </legend>
+                <input type="radio" name="genre" id="homme">
+                <label for="homme">Mr.</label>
+                <input type="radio" name="genre" id="femme">
+                <label for="femme">Mme.</label>
+                <input type="radio" name="genre" id="nonRenseigné" checked>
+                <label for="nonRenseigné">Non renseigné</label>
+            </fieldset>
+
+            <fieldset>
+                <legend> Nom & Prénom(s) : </legend>
+                <div>
+                    <label for="Nom">Nom :</label>
+                    <input type="text" name="Identité" id="Nom" placeholder="ex: Deschamps" required>
+                </div>
+
+                <div>
+                    <label for="Prénom">Prénom :</label>
+                    <input type="text" name="Identité" id="Prénom" placeholder="ex: Dider" required>
+                </div>
+
+                <div>
+                    <label for="prenomBis">Prénom n°2 :</label>
+                    <input type="text" name="Identité" id="prenomBis" placeholder="ex: Dider">
+                </div>
+
+                <div>
+                    <label for="prenomThird">Prénom n°3 :</label>
+                    <input type="text" name="Identité" id="prenomThird" placeholder="ex: Dider">
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend> Ville : </legend>
+                <select name="ville">
+                    <option>Choisissez parmi les options</option>
+                    <option value="Calais">Calais</option>
+                    <option value="Dunkerque">Dunkerque</option>
+                    <option value="Boulogne s/ Mer">Boulogne s/ Mer</option>
+                    <option value="Arras">Arras</option>
+                    <option value="Laon">Loan</option>
+                    <option value="St Quentin">St Quentin</option>
+                    <option value="Soissons">Soissons</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend> Code Postal : </legend>
+                <input name="département" type="text" placeholder="ex: 02200" required>
+            </fieldset>
+
+            <fieldset>
+                <legend> Adresse : </legend>
+                <textarea name="adresse" placeholder="Votre adresse" maxlength="12" required></textarea>
+            </fieldset>
+            <br>
+            <button type="submit" name="bouton">Envoyer</button>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
